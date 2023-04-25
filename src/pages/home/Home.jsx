@@ -8,7 +8,7 @@ export const Home = () => {
     <Grid container>
       <Grid item md={4}>
         <div className={style.full_box}>
-          {[...Array(5)].map((e, index) => {
+          {[...Array(4)].map((e, index) => {
             return (
               <Box key={index}>
                 <Box
@@ -31,6 +31,14 @@ export const Home = () => {
                   <Typography color="gray">+ Quantity</Typography>
                   <Typography color="gray">2</Typography>
                 </Box>
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                >
+                  <Typography color="gray">+ Sub Total</Typography>
+                  <Typography color="gray">$ 400</Typography>
+                </Box>
                 <br />
                 <Divider />
                 <br />
@@ -46,7 +54,7 @@ export const Home = () => {
               <b>Total</b>
             </Typography>
             <Typography variant="h6">
-              <b>$ 200</b>
+              <b>$ 1600</b>
             </Typography>
           </Box>
           <br />
@@ -63,7 +71,7 @@ export const Home = () => {
       <Grid item md={8} bgcolor="lightgray">
         <div className={style.full_box}>
           <Grid container spacing={5}>
-            {[...Array(15)].map((e, index) => {
+            {[...Array(14)].map((e, index) => {
               return (
                 <Grid item md={4} key={index}>
                   <Box p={2} bgcolor="white" borderRadius={2}>
